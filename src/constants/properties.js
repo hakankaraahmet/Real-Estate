@@ -1,7 +1,7 @@
 import Home1 from "../assets/home1.jpg";
 import Home2 from "../assets/home2.jpg";
 import Home3 from "../assets/home3.jpg";
-export const cards = [
+export const properties = [
   {
     id: 0,
     img: Home1,
