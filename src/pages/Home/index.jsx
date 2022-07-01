@@ -6,6 +6,8 @@ import {locations} from "../../constants/locations.js";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import SiteBanner from "../../components/SiteBanner";
+import ClientCard from "../../components/ClientCard/index.jsx";
+import { clients } from "../../constants/clients.js";
 
 const Home = () => {
   return (
@@ -29,6 +31,14 @@ const Home = () => {
         )}
       </div>
       <SiteBanner bannerLocation={"lower"}/>
+      <div className="flex justify-center p-10 mt-5">
+        <h2 className="mb-2 text-3xl text-gray-500 ">What Clients Say About Us ?</h2>
+      </div>
+      <div className="grid gap-5 p-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {clients.map(client => (
+          <ClientCard key={client.id} data={client}/>
+        ))}
+      </div>
     </>
   );
 };
