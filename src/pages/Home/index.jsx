@@ -5,6 +5,7 @@ import {locations} from "../../constants/locations.js";
 //components
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
+import Form from "../../components/Form";
 import SiteBanner from "../../components/SiteBanner";
 import ClientCard from "../../components/ClientCard/index.jsx";
 import { clients } from "../../constants/clients.js";
@@ -38,6 +39,12 @@ const Home = () => {
         {clients.map(client => (
           <ClientCard key={client.id} data={client}/>
         ))}
+      </div>
+      <div className="flex justify-center p-10 mt-5">
+        <h2 className="mb-2 text-3xl text-gray-500 ">Contact Us</h2>
+      </div>
+      <div className="flex items-center justify-center p-10 mt-5 bg-green-300">
+        <Form/>
       </div>
     </>
   );
