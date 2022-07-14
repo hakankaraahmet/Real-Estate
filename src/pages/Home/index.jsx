@@ -6,6 +6,7 @@ import {locations} from "../../constants/locations.js";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import Form from "../../components/Form";
+import Footer from "../../components/Footer";
 import SiteBanner from "../../components/SiteBanner";
 import ClientCard from "../../components/ClientCard/index.jsx";
 import { clients } from "../../constants/clients.js";
@@ -46,6 +47,10 @@ const Home = () => {
       <div className="flex items-center justify-center p-10 mt-5 bg-green-300">
         <Form/>
       </div>
+      <div className="flex justify-center px-10 pt-40 ">
+        <Footer />
+      </div>
+
     </>
   );
 };
